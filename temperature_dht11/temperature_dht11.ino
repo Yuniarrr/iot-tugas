@@ -8,7 +8,7 @@ VCC   3V3
 
 BTN   ESP32
 GND   GND
-S0    IO25
+S0    IO25 
 S1    IO33
 S2    IO32
 S3    IO35
@@ -31,9 +31,9 @@ SCL   IO22
 
 #define DHT_SENSOR_PIN  21 // ESP32 pin GIOP21 connected to DHT11 sensor
 #define DHT_SENSOR_TYPE DHT11
-#define BLYNK_TEMPLATE_ID "TMPLHZ8w8f-H"
+#define BLYNK_TEMPLATE_ID "TMPL2IWywrVQ"
 #define BLYNK_TEMPLATE_NAME "Temperature Detector"
-#define BLYNK_AUTH_TOKEN "ZThjLFK-_PYcp8Mk5QrJnpI4LN5Medig"
+#define BLYNK_AUTH_TOKEN "AV2J9tdskGY480clqV3rAOU3O2ucKmdP"
 #define BLYNK_PRINT Serial
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels

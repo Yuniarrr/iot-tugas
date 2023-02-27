@@ -18,7 +18,7 @@ void setup() {
   Serial.println("Connected to the WiFi network");
   
 }
-  
+
 void loop() {
   
   if ((WiFi.status() == WL_CONNECTED)) { //Check the current connection status
