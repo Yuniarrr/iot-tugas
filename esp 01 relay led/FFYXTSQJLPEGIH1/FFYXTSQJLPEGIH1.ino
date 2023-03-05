@@ -11,8 +11,8 @@
 //GND-GND dan IO0
 #include <ESP8266WiFi.h>
  
-const char* ssid = "password"; // fill in here your router or wifi SSID
-const char* password = "azril1337"; // fill in here your router or wifi password
+const char* ssid = "OPPO A16"; // fill in here your router or wifi SSID
+const char* password = "halo1234"; // fill in here your router or wifi password
 #define RELAY 0 // relay connected to  GPIO0
 WiFiServer server(80);
  
