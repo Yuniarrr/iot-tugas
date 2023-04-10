@@ -1,11 +1,21 @@
 #define BLYNK_PRINT Serial
-#include <ESP8266WiFi.h>
-#include <BlynkSimpleEsp8266.h>
+// #include <ESP8266WiFi.h>
+// #include <BlynkSimpleEsp8266.h>
+#include <WiFi.h>
+#include <WiFiClient.h>
+#include <BlynkSimpleEsp32.h>
+#include <analogWrite.h>
 
-#define IN1_pin       D1   //14 
-#define IN2_pin       D2   //12 
-#define IN3_pin       D3   //13 
-#define IN4_pin       D4   //15 
+// Right Side
+int IN1_pin = 27; 
+int IN2_pin = 26;
+
+// Left Side
+int IN3_pin = 25;
+int IN4_pin = 33;
+
+// #define IN3_pin       25   //13 
+// #define IN4_pin       33   //15 
 
 char auth[] = "arJse34qMId67T-vGs5QpqRi3qGljLBV";  //Blynk Authentication Token
 char ssid[] = "password";           //WIFI Name
@@ -54,10 +64,10 @@ void setup()
     pinMode(IN3_pin, OUTPUT);
     pinMode(IN4_pin, OUTPUT);
 
-    digitalWrite(IN1_pin, LOW);
-    digitalWrite(IN2_pin, LOW);
-    digitalWrite(IN3_pin, LOW);
-    digitalWrite(IN4_pin, LOW);
+    // digitalWrite(IN1_pin, LOW);
+    // digitalWrite(IN2_pin, LOW);
+    // digitalWrite(IN3_pin, LOW);
+    // digitalWrite(IN4_pin, LOW);
 }
 
 
